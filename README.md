@@ -1,2 +1,1 @@
-# next
-Next Insurance test project
+# Next Insurance test project
