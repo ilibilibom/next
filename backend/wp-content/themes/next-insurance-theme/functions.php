@@ -15,20 +15,11 @@ require_once 'inc/cors.php';
 // TinyMCE config
 require_once 'inc/tinymce.php';
 
+// custom api route
+require_once 'inc/customRoutes.php';
+
 // Enable recursion
 add_action('after_setup_theme', array('ACF_To_REST_API_Recursive', 'init'));
 add_filter('acf/rest_api/recursive/types', function($types) {
 	return $types;
 });
-
-add_action('init', function () {
-	register_post_type('landingPage', [
-		'public' => true, 
-		'label' => 'Landing Page',
-		'supports' => array( 'title' ), 
-		'show_in_graphql' => true,
-		'graphql_single_name' => 'landingPage', 
-		'graphql_plural_name' => 'landingPages',
-	]);
-}); 
-

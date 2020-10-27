@@ -78,6 +78,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+define('MAILCHIMP_KEY', '63a1c824b71b18448115bdb5e3ec8de3-us2');
+define('MAILCHIMP_LIST_ID', '1d4c671788');
 
 // If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
 // see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy

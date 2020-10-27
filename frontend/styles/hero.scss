@@ -1,0 +1,39 @@
+@import "./variables";
+
+.hero-image {
+  height: 550px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @media only screen and (min-width : $tabletMinWidth) and (max-width : $tabletMaxWidth){
+    height: 330px;
+  }
+  @media only screen and (min-width : $tabletMaxWidth){
+    height: 750px;
+  }
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.spinner-border {
+  top: 50%;
+  position: absolute;
+  margin-right: -35px;
+  right: 50%;
+  width: 80px;
+  height: 80px;
+}

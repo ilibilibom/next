@@ -1,0 +1,190 @@
+@import "./variables";
+
+.header {
+  .logo {
+    max-width: 140px;
+    @media only screen and (min-width: $tabletMaxWidth) {
+      max-width: 220px;
+    }
+  }
+}
+.jumbotron {
+  overflow: hidden;
+  position: relative;
+  @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    min-height: 500px;
+  }
+
+  @media only screen and (min-width: $tabletMaxWidth) {
+    max-height: 750px;
+  }
+
+  img {
+    width: 100%;
+    @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+      position: absolute;
+      right: -90px;
+      width: 150%;
+    }
+  }
+}
+
+.form {
+  position: absolute;
+  width: 40%;
+  max-width: 714px;
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 51px 86px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 67%;
+  left: 10%;
+  @media only screen and (max-width: $tabletMinWidth) {
+    padding: 17px 49px;
+    height: initial;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: initial;
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+  @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    height: 79%;
+  }
+  @media only screen and (min-width: $tabletMinWidth) and (max-width: $deskTopMinWidth) {
+    padding: 17px 49px;
+    width: 60%;
+    // height: 79%;
+    max-width: 360px;
+  }
+  h2 {
+    font-size: 20px;
+    font-family: "Montserrat";
+    @media only screen and (min-width: $tabletMaxWidth) {
+      font-size: 4.5vh;
+    }
+    @media only screen and (min-width: $deskTopLargWidth) {
+      font-size: 48px;
+    }
+    // @media only screen and (min-width: $tabletMinWidth) and (max-width: $deskTopLargWidth) {
+    //   font-size: 30px;
+    // }
+  }
+  .formGroup {
+    @media only screen and (max-width: $tabletMaxWidth) {
+      margin-bottom:5px
+    }
+  }
+  .formField {
+    height: 37px;
+    @media only screen and (min-width: $tabletMaxWidth){
+      height: 62px;
+    }
+  }
+  .submitButton {
+    width: 100%;
+    border-radius: 0;
+    border:0;
+    background-color: $ButtonYellow;
+    color: $buttonTextColor;
+    padding: 13px 0;
+    @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+      width:150px;
+      font-size: 12px;
+      padding: .5rem 1rem;
+    }
+    @media only screen and (max-width: $tabletMinWidth) {
+      padding: .5rem 1rem;
+    }
+  }
+  .errorText {
+    color: red;
+    @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+      font-size: 12px;
+    }
+
+  }
+}
+
+.ratingText {
+  color: $fontGray;
+  font-size: 14px;
+  @media only screen and (min-width: $deskTopMinWidth) {
+    margin-left: 20px;
+  }
+}
+.clients {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @media only screen and (min-width: $tabletMinWidth) {
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .clientLogo {
+    max-height: 15px;
+  }
+  .desktopRating {
+    display: none;
+    @media only screen and (min-width: $deskTopMinWidth) {
+      display: flex;
+    }
+  }
+}
+.mobileRating {
+  display: flex;
+  border-bottom: 1px solid $borderColor;
+  @media only screen and (min-width: $tabletMinWidth) {
+    border-bottom: none;
+  }
+  @media only screen and (min-width: $deskTopMinWidth) {
+    display: none;
+  }
+}
+.productContent {
+  max-width: 270px;
+}
+.productTitle {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.footer {
+  background-color: $footerBackgroundColor;
+  span {
+    color: $footerFontGray;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .footerContainer {
+    @media only screen and (max-width: $deskTopMinWidth) {
+      width: 100% !important;
+      max-width: initial !important;
+    }
+  }
+  .footerLogos {
+    max-height: 25px;
+    margin: 0 5px;
+  }
+  .footerBoorder {
+    @media only screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+      border-bottom: 1px solid $footerFontGray;
+    }
+  }
+}
+.loader {
+  position: fixed;
+  top:0;
+  right:0;
+  left:0; 
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.notFound {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10%;
+}
