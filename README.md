@@ -34,9 +34,9 @@ npm run dev
 ```
 This should run the app on http://localhost:3000
 
-IF you wish to change page data you can do that from the WP pages. 
-The frontend has dynamic routing, so any new route in WP will reflect in the frontend.
-To test this you can duplicate a WP page, then got to http://localhost:3000/your-slug
+IF you wish to change page data you can do that from the WP page. 
+The frontend has dynamic routing, so any new page in WP will reflect in the frontend.
+To test this you can duplicate a WP page, then go to http://localhost:3000/your-slug, and you should see the new page. 
 
 Enjoy!
 
