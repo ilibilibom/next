@@ -14,10 +14,10 @@ cd backend/
 docker-compose up -d
 ```
 Now WP should run on http://localhost:8000
-and phpmyadmin on http://localhost:8080
+and phpmyadmin on http://localhost:8080.
 
 To import the wordpress.sql file
-login to phpmyadmin with: 
+login to phpmyadmin (http://localhost:8080) with: 
 ```bash
 user: wordpress
 pass: wordpress
